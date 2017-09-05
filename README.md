@@ -5,5 +5,7 @@ JSON files are created to store unit conversion values which are called through 
 Key Learnings:
 
 1 AJAX 
+
 2 To create and store data in JSON format
+
 3 Dyanmically calling AJAX function and effectively using the json data that is received

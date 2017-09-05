@@ -1,0 +1,34 @@
+{
+  "Barrel Per Day(US)":{
+    "Barrel Per Day(US)":1,
+    "Barrel Per Hour":0.0417,
+    "Litre Per Day":158.9873,
+    "Litre Per Minute":0.1104,
+    "Symbol":"(bbl{US}/d)",
+    "value":"Barrel Per Day(US)"
+  },
+  "Barrel Per Hour":{
+    "Barrel Per Day(US)":24,
+    "Barrel Per Hour":1,
+    "Litre Per Day":3815.6951,
+    "Litre Per Minute":2.6498,
+    "Symbol":"(bbl{US}/h)",
+    "value":"Barrel Per Hour"
+  },
+  "Litre Per Day":{
+    "Barrel Per Day(US)":0.0063,
+    "Barrel Per Hour":0.00026208,
+    "Litre Per Day":1,
+    "Litre Per Minute":0.00069444,
+    "Symbol":"(l/d)",
+    "value":"Litre Per Day"
+  },
+  "Litre Per Minute":{
+    "Barrel Per Day(US)":9.0573,
+    "Barrel Per Hour":0.33774,
+    "Litre Per Day":1440,
+    "Litre Per Minute":1,
+    "Symbol":"(l/min)",
+    "value":"Litre Per Minute"
+  }
+}

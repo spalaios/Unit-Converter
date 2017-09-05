@@ -1,0 +1,34 @@
+{
+  "Dyne":{
+    "Dyne":1,
+    "Gram Force":0.001,
+    "Joules Per Centimetre":0.001,
+    "Joules Per Metre":0.00001,
+    "Symbol":"(dyn)",
+    "value":"Dyne"
+  },
+  "Gram Force":{
+    "Dyne":980.665,
+    "Gram Force":1,
+    "Joules Per Centimetre":0.9807,
+    "Joules Per Metre":0.0098,
+    "Symbol":"(gf)",
+    "value":"Gram Force"
+  },
+  "Joules Per Centimetre":{
+    "Dyne":1000,
+    "Gram Force":1.0197,
+    "Joules Per Centimetre":1,
+    "Joules Per Metre":0.01,
+    "Symbol":"(j/cm)",
+    "value":"Joules Per Centimetre"
+  },
+  "Joules Per Metre":{
+    "Dyne":100000,
+    "Gram Force":0.102,
+    "Joules Per Centimetre":100,
+    "Joules Per Metre":1,
+    "Symbol":"(j/m)",
+    "value":"Joules Per Metre"
+  }
+}

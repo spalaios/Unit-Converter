@@ -1,0 +1,7 @@
+{
+  "Energy":"energy",
+  "Voltage":"voltage",
+  "Current":"current",
+  "Inductance":"inductance",
+  "Power":"power"
+}

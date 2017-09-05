@@ -1,0 +1,34 @@
+{
+  "Kilograms" : {
+    "Kilograms":1,
+    "Grams":1000,
+    "Pounds":2.2046,
+    "Ounce":35.84,
+    "Symbol":"(kg)",
+    "value":"Kilograms"
+  },
+  "Grams" : {
+    "Kilograms":0.001,
+    "Grams":1,
+    "Pounds":0.0022,
+    "Ounce":0.0353,
+    "Symbol":"(gm)",
+    "value":"Grams"
+  },
+  "Pounds" : {
+    "Kilograms":0.4536,
+    "Grams":453.5924,
+    "Pounds":1,
+    "Ounce":16,
+    "Symbol":"(lb)",
+    "value":"Pounds"
+  },
+  "Ounce" : {
+    "Kilograms":0.0283,
+    "Grams":28.34,
+    "Pounds":0.0625,
+    "Ounce":1,
+    "Symbol":"(oz)",
+    "value":"Ounce"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "Barrel(UK)":{
+    "Barrel(UK)":1,
+    "Barrel(US)":1.32,
+    "Centilitre":16365.924,
+    "Gallon(UK)":36,
+    "Gallon(US)":43.2342,
+    "Litre":163.6592,
+    "Oil Barrel":1.0294,
+    "Symbol":"(bbl{UK})",
+    "value":"Barrel(UK)"
+  },
+  "Barrel(US)":{
+    "Barrel(UK)":0.7286,
+    "Barrel(US)":1,
+    "Centilitre":11924.0471,
+    "Gallon(UK)":26.2292,
+    "Gallon(US)":31.5,
+    "Litre":119.2405,
+    "Oil Barrel":0.75,
+    "Symbol":"(bbl{US})",
+    "value":"Barrel(US)"
+  },
+  "Centilitre":{
+    "Barrel(UK)":0.000061103,
+    "Barrel(US)":0.00008386,
+    "Centilitre":1,
+    "Gallon(UK)":0.0022,
+    "Gallon(US)":0.0026,
+    "Litre":0.01,
+    "Oil Barrel":0.000062898,
+    "Symbol":"(cl)",
+    "value":"Centilitre"
+  },
+  "Gallon(UK)":{
+    "Barrel(UK)":0.0278,
+    "Barrel(US)":0.0381,
+    "Centilitre":454.609,
+    "Gallon(UK)":1,
+    "Gallon(US)":1.2009,
+    "Litre":4.5461,
+    "Oil Barrel":0.0286,
+    "Symbol":"(gal{UK})",
+    "value":"Gallon(UK)"
+  },
+  "Gallon(US)":{
+    "Barrel(UK)":0.0231,
+    "Barrel(US)":0.0317,
+    "Centilitre":378.5412,
+    "Gallon(UK)":0.8327,
+    "Gallon(US)":1,
+    "Litre":3.7854,
+    "Oil Barrel":0.0238,
+    "Symbol":"(gal{US})",
+    "value":"Gallon(US)"
+  },
+  "Litre":{
+    "Barrel(UK)":0.0061,
+    "Barrel(US)":0.0084,
+    "Centilitre":100,
+    "Gallon(UK)":0.22,
+    "Gallon(US)":0.2642,
+    "Litre":1,
+    "Oil Barrel":0.0063,
+    "Symbol":"(l)",
+    "value":"Litre"
+  },
+  "Oil Barrel":{
+    "Barrel(UK)":0.9715,
+    "Barrel(US)":1.3333,
+    "Centilitre":15898.7295,
+    "Gallon(UK)":34.9723,
+    "Gallon(US)":42,
+    "Litre":158.9873,
+    "Oil Barrel":1,
+    "Symbol":"(barrel{Oil})",
+    "value":"Oil Barrel"
+  }
+}

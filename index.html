@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unit converter</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1>Unit Converter</h1>
+        <div class="form-group">
+          <form >
+            <label for="categoryInput">Category:</label>
+              <select name="" id="categoryInput" class="form-control form-control-lg mb-3">
+              <option value="basic">Basic</option>
+              <option value="science">Science</option>
+              <option value="computing">Computing</option>
+              <option value="electricity">Electricity</option>
+              <option value="environment">Environment</option>
+              <option value="mobility">Mobility</option>
+              <option value="others">Others</option>
+            </select>
+          </form>
+        </div>
+        <div class="form-group">
+          <form >
+            <label for="subcategoryInput">Sub-Category:</label>
+              <select name="" id="subcategoryInput" class="form-control form-control-lg mb-3">
+              <!-- <option value="mass">Mass</option>
+              <option value="length">Length</option>
+              <option value="temperature">Temperature</option>
+              <option value="volume">Volume</option> -->
+            </select>
+          </form>
+        </div>
+        <div class="form-group">
+          <form >
+            <label for="fromInput">From:</label>
+              <select name="" id="fromInput" class="form-control form-control-lg mb-3">
+              <!-- <option value="Kilograms">Kilograms</option>
+              <option value="Grams">Grams</option>
+              <option value="Pounds">Pounds</option>
+              <option value="Ounce">Ounce</option> -->
+            </select>
+
+            <label for="toInput">To:</label>
+              <select name="" id="toInput" class="form-control form-control-lg mb-3">
+              <!-- <option value="Grams">Grams</option>
+              <option value="Kilograms">Kilograms</option>
+              <option value="Pounds">Pounds</option>
+              <option value="Ounce">Ounce</option> -->
+            </select>
+            <input type="text" id="forminput" class="form-control form-control-lg " placeholder="Enter Number">
+          </form>
+        </div>
+        <div id="output">
+          <!-- <div class="card card-primary mb-2" style="color:white" id="grams">
+            <div class="card-block">
+              <h3>Grams(gm) :</h3>
+              <div id="gramsOutput"></div>
+            </div>
+          </div>
+          <div class="card card-warning mb-2" style="color:white" id="pounds">
+            <div class="card-block">
+              <h3>Pounds(lb) :</h3>
+              <div id="poundsOutput"></div>
+            </div>
+          </div>
+          <div class="card card-success mb-2" style="color:white" id="ounce">
+            <div class="card-block">
+              <h3>Ounce(oz) :</h3>
+              <div id="ounceOutput"></div>
+            </div>
+          </div>
+          <div class="card card-info mb-2" style="color:white" id="kilogram">
+            <div class="card-block">
+              <h3>Kilogram(kg) :</h3>
+              <div id="kilogramOutput"></div>
+            </div>
+        2 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.10.2.min.js" charset="utf-8"></script>
+<script src="js/converter.js" charset="utf-8"></script>
+<script src="js/debounce.js" charset="utf-8"></script>
+</script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+var kilograms ={
+  grams:1000,
+  pounds:2.2046,
+  ounce:35.84
+}
+
+let inputValue = document.getElementById('forminput');
+
+let from = document.getElementById('fromInput');
+from.addEventListener('change',function(e){
+  console.log(e.target.value);
+});
+
+let to = document.getElementById('toInput');
+to.addEventListener('change',function(e){
+  console.log(e.target.value);
+
+
+});
+
+inputValue.addEventListener('input',function(e){
+  let output = document.getElementById('output');
+  output.innerHTML =`
+                <div class="card card-primary mb-2" style="color:white" id="grams">
+                //here the id value should be dynamically set
+                  <div class="card-block">
+                    <h3>Grams(gm) :</h3>
+                    <div id="gramsOutput"></div>
+                  </div>
+                </div>
+  `;
+
+  let gram = document.getElementById('gramsOutput');
+  gram.innerHTML = "<h4>"+e.target.value*(kilograms.grams)+"</h4>";
+
+});
+
+
+//latest code
+$(function(){
+
+//Store the unit as objects in a array
+
+let fromObject;
+let toObject;
+
+let mass = [
+
+  Kilograms = {
+    Kilograms:1,
+    Grams:1000,
+    Pounds:2.2046,
+    Ounce:35.84,
+    Symbol:"(kg)",
+    value:"Kilograms"
+  },
+  Grams = {
+    Kilograms:0.001,
+    Grams:1,
+    Pounds:0.0022,
+    Ounce:0.0353,
+    Symbol:"(gm)",
+    value:"Grams"
+  },
+  Pounds = {
+    Kilograms:0.4536,
+    Grams:453.5924,
+    Pounds:1,
+    Ounce:16,
+    Symbol:"(lb)",
+    value:"Pounds"
+  },
+  Ounce = {
+    Kilograms:0.0283,
+    Grams:28.34,
+    Pounds:0.0625,
+    Ounce:1,
+    Symbol:"(oz)",
+    value:"Ounce"
+  }
+];
+
+//test the values of the from and to values
+$('#fromInput').change(function(e){
+  // console.log(e.target.value);
+});
+$('#toInput').change(function(e){
+  // console.log(e.target.value);
+});
+
+//add listener to the input value on change
+$('#forminput').on('input',function(e){
+
+  var pattern = /^\s*\d+$/;
+  var alphabets = /[a-zA-Z]/g;
+  var negative = /[-]/g;
+  //also check for negative
+  if(negative.test(e.target.value) || alphabets.test(e.target.value)){
+      alert('Only Numbers are allowed');
+  }
+  else if(pattern.test(e.target.value)){
+    // console.log(parseInt(e.target.value));
+
+
+    //taken the both from and to values
+    let fromValue = $('#fromInput').val();
+    // console.log(fromValue);
+    let toValue = $('#toInput').val();
+
+// mass.forEach(function(element){
+//   if(element.value === fromValue){
+//     massObject = element;
+//     // console.log('fromValue '+fromValue);
+//     // console.log(massObject);
+//     }
+//     console.log(massObject);
+// });
+
+toObject = mass.filter(function(el){
+  return el.value === toValue;
+});
+// console.log(toObject[0].value);
+
+fromObject = mass.filter(function(el){
+    return el.value === fromValue;
+  });
+  // console.log(fromObject[0].value);
+    }
+
+    let output = document.getElementById('output');
+    output.innerHTML =`
+                  <div class="card card-primary mb-2" style="color:white" id=${toObject[0].value}>
+
+                    <div class="card-block">
+                      <h3>${toObject[0].value}${toObject[0].Symbol} :</h3>
+                      <div id="gramsOutput"></div>
+                    </div>
+                  </div>
+    `;
+
+    // console.log(Object.keys(fromObject[0])[1]);
+    let inputValue = document.getElementById('forminput');
+    let gram = document.getElementById('gramsOutput');
+    gram.innerHTML = "<h4>"+inputValue.value*fromObject[0][toObject[0].value]+"</h4>";
+
+
+
+
+});
+
+
+// //refresh code
+// function refresh(){
+//   let output = document.getElementById('output');
+//   output.innerHTML =`
+//                 <div class="card card-primary mb-2" style="color:white" id=${toObject[0].value}>
+//
+//                   <div class="card-block">
+//                     <h3>${toObject[0].value}${toObject[0].Symbol} :</h3>
+//                     <div id="gramsOutput"></div>
+//                   </div>
+//                 </div>
+//   `;
+//
+//   // console.log(Object.keys(fromObject[0])[1]);
+//   let valuePad = document.getElementById('forminput');
+//   let gram = document.getElementById('gramsOutput');
+//   gram.innerHTML = "<h4>"+(valuePad.value)*fromObject[0][toObject[0].value]+"</h4>";
+//
+// }
+
+
+
+
+
+
+
+});
+
+
+
+
+//new code with ajax request
+
+$(function(){
+  let fromObject;
+  let toObject;
+
+$('#forminput').keypress($.debounce(350,function(e){
+  var pattern = /^\s*\d+$/;
+  var alphabets = /[a-zA-Z]/g;
+  var negative = /[-]/g;
+  //also check for negative
+  if(negative.test(e.target.value) || alphabets.test(e.target.value)){
+      alert('Only Numbers are allowed');
+  }
+    else if(pattern.test(e.target.value)){
+
+      $.ajax({
+        url:'mass.json'
+      }).done(function(user){
+        // console.log(user);
+        //taken the both from and to values
+        let fromValue = $('#fromInput').val();
+        // console.log(fromValue);
+        let toValue = $('#toInput').val();
+          // console.log(toValue);
+        fromObject = user[fromValue];
+          // console.log(fromObject);
+
+        toObject = user[toValue];
+          // console.log(toObject);
+
+          let output = document.getElementById('output');
+             output.innerHTML =`
+                           <div class="card card-primary mb-2" style="color:white" id=${toObject['value']}>
+
+                             <div class="card-block">
+                               <h3>${toObject['value']}${toObject['Symbol']} :</h3>
+                               <div id="valueOutput"></div>
+                             </div>
+                           </div>
+             `;
+
+             // console.log(Object.keys(fromObject[0])[1]);
+             let inputValue = document.getElementById('forminput');
+             let valueOutput = document.getElementById('valueOutput');
+             valueOutput.innerHTML = "<h4>"+e.target.value*fromObject[toObject['value']]+"</h4>";
+});
+}
+}));
+
+
+
+});

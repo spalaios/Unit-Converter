@@ -1,0 +1,34 @@
+{
+  "Celsius":{
+    "Celsius":1,
+    "Fahrenheit":33.8,
+    "Newton":0.33,
+    "Kelvin":274.15,
+    "Symbol":"(°C)",
+    "value":"Celsius"
+  },
+  "Fahrenheit":{
+    "Celsius":-17.2222,
+    "Fahrenheit":1,
+    "Newton":-5.6833,
+    "Kelvin":255.92,
+    "Symbol":"(°F)",
+    "value":"Fahrenheit"
+  },
+  "Newton":{
+    "Celsius":3.0303,
+    "Fahrenheit":37.4545,
+    "Newton":1,
+    "Kelvin":276.1803,
+    "Symbol":"(°N)",
+    "value":"Newton"
+  },
+  "Kelvin":{
+    "Celsius":-272.15,
+    "Fahrenheit":-457.87,
+    "Newton":-89.8095,
+    "Kelvin":1,
+    "Symbol":"(°K)",
+    "value":"Kelvin"
+  }
+}

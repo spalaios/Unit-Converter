@@ -1,0 +1,11 @@
+{
+  "Minute":"minute",
+  "Second":"second",
+  "Circular":"circular",
+  "Degree":"degree",
+  "Gradient":"gradient",
+  "Octant":"octant",
+  "Point":"point",
+  "Radian":"radian",
+  "Revolution":"revolution"
+}
